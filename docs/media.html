@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images and Videos</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Images and Videos</h1>
+        <hr>
+
+        <p>
+            In this page, I will demonstrate how to display images and videos using HTML.
+        </p>
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Images</h2>
+
+            <p>
+                Let's begin with images.
+            </p>
+
+            <img src="Images/Dewgiri.png"
+                 alt="A fantasy map for a story I am working on."
+                 height="1000">
+
+            <p>
+                This is a fantasy map for a story I am currently working on.
+            </p>
+
+            <hr>
+
+            <img src="https://undiscoveredmountains.com/uploads/articles/wysiwyg/Mount%20Everest.png"
+                 alt="A mountain landscape."
+                 height="500">
+
+            <p>
+                Just a mountain, since the map above depicts a mountainous region.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h2>Videos</h2>
+
+            <p>
+                HTML also allows us to embed videos using the <code>&lt;video&gt;</code> tag.
+            </p>
+
+            <video height="500" muted autoplay loop>
+                <source src="Video/Homelander.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <p>
+                Yeah... it's a Homelander edit. I know, edgy.
+                I could have added controls to the video, but I personally think it looks cleaner without them.
+            </p>
+
+            <p>
+                One thing I learned is that the <code>&lt;video&gt;</code> tag is <b>not</b> self-closing like the
+                <code>&lt;img&gt;</code> tag. It requires both opening and closing tags; otherwise, anything after it
+                may not display correctly.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h2>Hyperlinks</h2>
+
+            <p>
+                The Homelander edit is part of a rap music video. If you're interested, you can watch it below.
+            </p>
+
+            <p>
+                <a href="https://www.youtube.com/watch?v=XxeOIA1n9Po" target="_blank">
+                    Watch the Video
+                </a>
+            </p>
+
+            <p>
+                (Okay... that was also an excuse to demonstrate the
+                <code>&lt;a&gt;</code> and <code>href</code> tags.)
+            </p>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+
+        <nav>
+            <a href="index.html">🏠 Home</a> |
+            <a href="para.html">⬅ Previous</a> |
+            <a href="formating.html">Next ➜</a>
+        </nav>
+
+    </footer>
+
+</body>
+</html>
