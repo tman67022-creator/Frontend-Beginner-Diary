@@ -40,3 +40,7 @@ https://tman67022-creator.github.io/Frontend-Beginner-Diary/
 ## Author
 
 Created by Tman67022 as part of my frontend learning journey.
+
+## Project URL
+
+[Basic HTML Website Project](https://roadmap.sh/projects/basic-html-website)
