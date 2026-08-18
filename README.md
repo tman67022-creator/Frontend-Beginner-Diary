@@ -4,7 +4,7 @@ This project was created while learning the fundamentals of HTML. It demonstrate
 
 ## Live Demo
 
-https://tman67022-creator.github.io/Frontend-Beginner-Diary/
+http://tman.in/
 
 ## Topics Covered
 
