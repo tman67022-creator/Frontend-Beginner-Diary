@@ -4,34 +4,43 @@
   padding: 0;
 }
 h1 {
-  color: crimson;
+    color: #FF0000;
 }
 
 h2 {
-  color:rgb(206, 1, 1)
+    color: #E60000;
 }
 
 h3 {
-  color: rgb(168, 0, 0)
+    color: #CC0000;
 }
+
 h4 {
-  color: rgb(147, 0, 0)
+    color: #B30000;
 }
+
 h5 {
-  color:rgb(126, 0, 0)
+    color: #990000;
 }
+
 h6 {
-  color:rgb(60, 0, 0)
+    color: #800000;
 }
 p {
-  color: rgb(4, 0, 234);
+  color: #0057D9;
+}
+Link {
+  color: #00A6FB;
+}
+Link:hover {
+  color: #FF3B30;
 }
 .Ducks {
-  background-color: #FFF8E7;
+  background-color: #00BFA6;
 }
 .Bees {
-  background-color: #FFE4C4;
+  background-color: #FFF3D6;
 }
 .Foxes {
-  background-color:#E8EAF6
+  background-color:#FFB703
 }
