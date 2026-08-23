@@ -94,3 +94,122 @@ footer {
 hr {
   background-color: #ffffff;height: 5px; width: 100%;
 }
+ol {
+  color: #ffffff;
+  text-align: center;
+}
+
+.Bees form {
+  display: grid;
+  gap: 18px;
+  max-width: 760px;
+  margin: 30px auto 50px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.28);
+  text-align: left;
+  line-height: 1.4;
+}
+
+.Bees .form-field {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.58);
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.Bees .form-field > label,
+.Bees .form-field > legend {
+  flex: 0 0 190px;
+  color: #ffdada;
+}
+
+.Bees .form-field input:not([type="radio"]):not([type="checkbox"]),
+.Bees .form-field select,
+.Bees .form-field textarea {
+  min-width: 0;
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #202020;
+  font: inherit;
+}
+
+.Bees .form-field input[type="range"] {
+  accent-color: #ff8787;
+}
+
+.Bees .choice-field {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.Bees .choice-field legend {
+  grid-column: 1 / -1;
+}
+
+.Bees .choice-field label,
+.Bees .check-field {
+  color: #ffffff;
+}
+
+.Bees .choice-field input,
+.Bees .check-field input {
+  accent-color: #ff8787;
+}
+
+.Bees .message-field {
+  align-items: flex-start;
+}
+
+.Bees .message-field textarea {
+  resize: vertical;
+}
+
+.Bees .submit-button {
+  justify-self: center;
+  padding: 12px 34px;
+  border: 1px solid #ffdada;
+  border-radius: 6px;
+  background: rgba(255, 135, 135, 0.9);
+  color: #202020;
+  font: inherit;
+  cursor: pointer;
+}
+
+.Bees .submit-button:hover {
+  background: #ffffff;
+}
+
+@media (max-width: 700px) {
+  .Bees form {
+    margin: 20px 12px 35px;
+    padding: 14px;
+  }
+
+  .Bees .form-field {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 18px;
+  }
+
+  .Bees .form-field > label,
+  .Bees .form-field > legend {
+    flex-basis: auto;
+  }
+
+  .Bees .choice-field {
+    grid-template-columns: 1fr;
+  }
+}

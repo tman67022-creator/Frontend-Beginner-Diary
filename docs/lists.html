@@ -14,8 +14,9 @@
 <body>
 
     <header>
-    <div class="Ducks">
+    <div class="Ducks" style="background-color: rgb(254, 135, 135);">
         <h1>Lists, Tables and Forms</h1>
+        <hr>
 
                 <p>
                     On this page I will be documenting what I learned about Lists,
@@ -27,7 +28,7 @@
     <hr>
 
     <main>
-    <div class="Bees">
+    <div class="Bees" style="background-color: rgb(199, 197, 197);">
         <!-- ================= LISTS ================= -->
 
                 <section>
@@ -214,154 +215,70 @@
                         Below is a sample form using many of the input types I learned.
                     </p>
 
-                    <form action="/Contact-Me">
+                    <form action="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=tman67022@gmail.com">
 
-                        <label for="username">
-                            Username:
-                        </label>
+                        <div class="form-field">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" placeholder="Email or Username" required>
+                        </div>
 
-                        <input
-                            type="text"
-                            id="username"
-                            placeholder="Email or Username"
-                            required>
+                        <div class="form-field">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password">
+                        </div>
 
-                        <br><br>
+                        <div class="form-field">
+                            <label for="date">Date:</label>
+                            <input type="date" id="date">
+                        </div>
 
-                        <label for="password">
-                            Password:
-                        </label>
+                        <div class="form-field">
+                      <label for="file">File:</label>
+                            <input type="file" id="file">
+                        </div>
 
-                        <input
-                            type="password"
-                            id="password">
+                        <div class="form-field">
+                            <label for="colour">Favourite Colour:</label>
+                            <input type="color" id="colour">
+                        </div>
 
-                        <br><br>
+                        <div class="form-field">
+                            <label for="range">Range:</label>
+                            <input type="range" id="range">
+                        </div>
 
-                        <label for="date">
-                            Date:
-                        </label>
+                        <div class="form-field">
+                            <label for="click-me">Button:</label>
+                            <input id="click-me" style="color: crimson;" type="button" value="Just Click Me Vro 🥹✌️💔">
+                        </div>
 
-                        <input
-                            type="date"
-                            id="date">
+                        <fieldset class="form-field choice-field">
+                            <legend>Gender</legend>
+                            <label><input type="radio" id="male" name="gender"> Male</label>
+                            <label><input type="radio" id="female" name="gender"> Female</label>
+                            <label><input type="radio" id="other" name="gender"> Other</label>
+                        </fieldset>
 
-                        <br><br>
+                        <div class="form-field">
+                            <label for="fruit">Select a Fruit:</label>
+                            <select id="fruit">
+                                <option>Apple</option>
+                                <option>Banana</option>
+                                <option>Cherry</option>
+                            </select>
+                        </div>
 
-                        <label for="file">
-                            File:
-                        </label>
-
-                        <input
-                            type="file"
-                            id="file">
-
-                        <br><br>
-
-                        <label>
-                            Favourite Colour:
-                        </label>
-
-                        <input type="color">
-
-                        <br><br>
-
-                        <label>
-                            Range:
-                        </label>
-
-                        <input type="range">
-
-                        <br><br>
-
-                        <label>
-                            Button:
-                        </label>
-
-                        <input style="color: crimson;"
-                            type="button"
-                            value="Just Click Me Vro 🥹✌️💔">
-
-                        <br><br>
-
-                        <strong>Gender</strong>
-
-                        <br>
-
-                        <input
-                            type="radio"
-                            id="male"
-                            name="gender">
-
-                        <label for="male">
-                            Male
-                        </label>
-
-                        <br>
-
-                        <input
-                            type="radio"
-                            id="female"
-                            name="gender">
-
-                        <label for="female">
-                            Female
-                        </label>
-
-                        <br>
-
-                        <input
-                            type="radio"
-                            id="other"
-                            name="gender">
-
-                        <label for="other">
-                            Other
-                        </label>
-
-                        <br><br>
-
-                        <label for="fruit">
-                            Select a Fruit:
-                        </label>
-
-                        <select id="fruit">
-
-                            <option>Apple</option>
-                            <option>Banana</option>
-                            <option>Cherry</option>
-
-                        </select>
-
-                        <br><br>
-
-                        <label>
-
+                        <label class="form-field check-field">
                             <input type="checkbox">
-
                             I agree to the Terms and Conditions.
-
                         </label>
 
-                        <br><br>
+                        <div class="form-field message-field">
+                            <label for="message">Comments:</label>
+                            <textarea id="message" rows="6" cols="45" placeholder="Type anything you want here..."></textarea>
+                        </div>
 
-                        <label for="message">
-                            Comments:
-                        </label>
-
-                        <br>
-
-                        <textarea
-                            id="message"
-                            rows="6"
-                            cols="45"
-                            placeholder="Type anything you want here..."></textarea>
-
-                        <br><br>
-
-                        <input
-                            type="submit"
-                            value="Submit">
+                        <input class="submit-button" type="submit" value="Submit">
 
                     </form>
 
