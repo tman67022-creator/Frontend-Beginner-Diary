@@ -320,6 +320,16 @@ hr {
 ol {
   color: #ffffff;
   text-align: center;
+  list-style-position: inside;
+}
+
+.Bees ul {
+  list-style-position: inside;
+}
+
+.Bees li > ol,
+.Bees li > ul {
+  margin-left: 2em;
 }
 
 .Bees table {
