@@ -216,6 +216,7 @@ a:active {
   margin: 0;
   padding: 0;
   border: solid 10px #ffffff;
+  color: #ffffff;
   height: 200%;
   font-size: 50px;
   line-height: 3;
@@ -319,6 +320,18 @@ hr {
 ol {
   color: #ffffff;
   text-align: center;
+}
+
+.Bees table {
+  width: fit-content;
+  border-collapse: collapse;
+  margin: 24px auto;
+}
+
+.Bees th,
+.Bees td {
+  border: 1px solid #ffffff;
+  padding: 8px 12px;
 }
 
 .Bees form {
