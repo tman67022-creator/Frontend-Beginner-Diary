@@ -317,19 +317,29 @@ footer nav {
 hr {
   background-color: #ffffff;height: 5px; width: 100%;
 }
-ol {
+.Bees ol,
+.Bees ul {
+  display: block;
+  width: fit-content;
+  max-width: min(90%, 600px);
+  margin: 18px auto;
+  padding: 18px 28px 18px 42px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
   color: #ffffff;
-  text-align: center;
-  list-style-position: inside;
+  text-align: left;
+  list-style-position: outside;
 }
 
-.Bees ul {
-  list-style-position: inside;
+.Bees li {
+  text-align: left;
 }
 
 .Bees li > ol,
 .Bees li > ul {
-  margin-left: 2em;
+  margin-top: 0.75em;
+  margin-left: 1.5em;
 }
 
 .Bees table {
