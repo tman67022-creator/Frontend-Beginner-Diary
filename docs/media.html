@@ -1,154 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Images and Videos</title>
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2d3f1feef9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2d3f1feef9.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-            #Fantasy {
-                position: relative;
-                background-image: url("Images/Nandis2.jpg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                overflow: hidden;
-            }
+      #Fantasy {
+        position: relative;
+        background-image: url("Images/Nandis2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+      }
 
-            #Fantasy::before {
-                content: "";
-                position: absolute;
-                inset: 0;
-                background: rgba(0, 0, 0, 0.55);
-                z-index: 0;
-            }
+      #Fantasy::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+        z-index: 0;
+      }
 
-            #Fantasy > * {
-                position: relative;
-                z-index: 1;
-            }
+      #Fantasy > * {
+        position: relative;
+        z-index: 1;
+      }
 
-            #Fantasy img {
-                display: block;
-                margin: 0 auto;
-                background-color: rgba(0, 0, 0, 0.9);
-                box-sizing: content-box;
-                padding: 0;
-                border: 10px solid #ffffff;
-            }
-        </style>
-</head>
+      #Fantasy img {
+        display: block;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.9);
+        box-sizing: content-box;
+        padding: 0;
+        border: 10px solid #ffffff;
+      }
+    </style>
+  </head>
 
-<body>
-
+  <body>
     <header>
-    <div class="Ducks">
+      <div class="Ducks">
         <h1>Images and Videos</h1>
-                <hr>
+        <hr />
 
-                <p>
-                    In this page, I will demonstrate how to display images and videos using HTML.
-                </p>
-    </div>
-</header>
+        <p>
+          In this page, I will demonstrate how to display images and videos
+          using HTML.
+        </p>
+      </div>
+    </header>
 
     <main>
-    <div class="Bees">
+      <div class="Bees">
         <section>
-            <div id="Fantasy"
-            style="text-align: center; padding: 20px;">
-                
-                    <h2 style="font-weight: 1000; color: #ffffff; background-color: rgba(0, 0, 0, 0.9); box-sizing: content-box; margin: 0; padding: 0; border: 10px solid #ffffff;">Images</h2>
+          <div id="Fantasy" style="text-align: center; padding: 20px">
+            <h2
+              style="
+                font-weight: 1000;
+                color: #ffffff;
+                background-color: rgba(0, 0, 0, 0.9);
+                box-sizing: content-box;
+                margin: 0;
+                padding: 0;
+                border: 10px solid #ffffff;
+              "
+            >
+              Images
+            </h2>
 
-                    <p style=" background-color: rgba(0, 0, 0, 0.9); box-sizing: content-box; margin: 0; padding: 0; border: 10px solid #ffffff;">
-                        <b>Let's begin with images.</b>
-                    </p>
+            <p
+              style="
+                background-color: rgba(0, 0, 0, 0.9);
+                box-sizing: content-box;
+                margin: 0;
+                padding: 0;
+                border: 10px solid #ffffff;
+              "
+            >
+              <b>Let's begin with images.</b>
+            </p>
 
-                    <img class="media-asset" src="Images/DewGiri.png"
-                        alt="A fantasy map for a story I am working on.">
+            <img
+              class="media-asset"
+              src="Images/DewGiri.png"
+              alt="A fantasy map for a story I am working on."
+            />
 
-                    <p style=" background-color: rgba(0, 0, 0, 0.9); box-sizing: content-box; margin: 0; padding: 0; border: 10px solid #ffffff;">
-                        <b>This is a fantasy map for a story I am currently working on.</b>
-                    </p>
-            </div>
-                    <hr>
+            <p
+              style="
+                background-color: rgba(0, 0, 0, 0.9);
+                box-sizing: content-box;
+                margin: 0;
+                padding: 0;
+                border: 10px solid #ffffff;
+              "
+            >
+              <b
+                >This is a fantasy map for a story I am currently working on.</b
+              >
+            </p>
+          </div>
+          <hr />
 
-                    <img class="media-asset" src="https://undiscoveredmountains.com/uploads/articles/wysiwyg/Mount%20Everest.png"
-                        alt="A mountain landscape.">
+          <img
+            class="media-asset"
+            src="https://undiscoveredmountains.com/uploads/articles/wysiwyg/Mount%20Everest.png"
+            alt="A mountain landscape."
+          />
 
-                    <p>
-                        Just a mountain, since the map above depicts a mountainous region.
-                    </p>
+          <p>
+            Just a mountain, since the map above depicts a mountainous region.
+          </p>
+        </section>
 
-                </section>
+        <hr />
 
-                <hr>
+        <section>
+          <h2>Videos</h2>
 
-                <section>
+          <p>
+            HTML also allows us to embed videos using the
+            <code>&lt;video&gt;</code> tag.
+          </p>
 
-                    <h2>Videos</h2>
+          <video class="media-asset" muted autoplay loop>
+            <source src="Video/Homelander.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
 
-                    <p>
-                        HTML also allows us to embed videos using the <code>&lt;video&gt;</code> tag.
-                    </p>
+          <p>
+            Yeah... it's a Homelander edit. I know, edgy. I could have added
+            controls to the video, but I personally think it looks cleaner
+            without them.
+          </p>
 
-                    <video class="media-asset" muted autoplay loop>
-                        <source src="Video/Homelander.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+          <p>
+            One thing I learned is that the <code>&lt;video&gt;</code> tag is
+            <b>not</b> self-closing like the <code>&lt;img&gt;</code> tag. It
+            requires both opening and closing tags; otherwise, anything after it
+            may not display correctly.
+          </p>
+        </section>
 
-                    <p>
-                        Yeah... it's a Homelander edit. I know, edgy.
-                        I could have added controls to the video, but I personally think it looks cleaner without them.
-                    </p>
+        <hr />
 
-                    <p>
-                        One thing I learned is that the <code>&lt;video&gt;</code> tag is <b>not</b> self-closing like the
-                        <code>&lt;img&gt;</code> tag. It requires both opening and closing tags; otherwise, anything after it
-                        may not display correctly.
-                    </p>
+        <section>
+          <h2>Hyperlinks</h2>
 
-                </section>
+          <p style="text-align: center">
+            The Homelander edit is part of a rap music video. If you're
+            interested, you can watch it below.
+          </p>
 
-                <hr>
+          <p style="text-align: center; color: darkred">
+            <a
+              style="color: darkred"
+              href="https://www.youtube.com/watch?v=XxeOIA1n9Po"
+              target="_blank"
+            >
+              <i class="fa-brands fa-youtube" style="font-size: 150px"></i>
+            </a>
+          </p>
 
-                <section>
+          <p>
+            (Okay... that was also an excuse to demonstrate the
+            <code>&lt;a&gt;</code> and <code>href</code> tags.)
+          </p>
+        </section>
+      </div>
+    </main>
 
-                    <h2>Hyperlinks</h2>
-
-                    <p style="text-align: center;">
-                        The Homelander edit is part of a rap music video. If you're interested, you can watch it below.
-                    </p>
-
-                    <p style="text-align: center; color:darkred;">
-                        <a style="color: darkred;" href="https://www.youtube.com/watch?v=XxeOIA1n9Po" target="_blank">
-                           <i class="fa-brands fa-youtube" style="font-size:150px;"></i>
-                        </a>
-                    </p>
-
-                    <p>
-                        (Okay... that was also an excuse to demonstrate the
-                        <code>&lt;a&gt;</code> and <code>href</code> tags.)
-                    </p>
-
-                </section>
-    </div>
-</main>
-
-    <hr>
+    <hr />
 
     <footer>
-    <div class="Foxes">
+      <div class="Foxes">
         <nav>
-                    <a href="index.html"><i class="fa-solid fa-house"></i></a> |
-                    <a href="para.html">⬅ Previous</a> |
-                    <a href="formating.html">Next ➜</a>
-                </nav>
-    </div>
-</footer>
-
-</body>
+          <a href="para.html">⬅ Previous</a> |
+          <a href="index.html"><i class="fa-solid fa-house"></i></a> |
+          <a href="formating.html">Next ➜</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>

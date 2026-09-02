@@ -44,35 +44,31 @@ table {
 h1 {
   font-size: 100px;
   text-decoration: underline;
-    color: #000000;
+  color: #000000;
 }
-
-  .Ducks h1 {
-    font-size: 48px !important;
-  }
 h2 {
   text-decoration: underline;
-    color: #2e2e2e;
+  color: #2e2e2e;
 }
 
 h3 {
   text-decoration: underline;
-    color: #606060;
+  color: #606060;
 }
 
 h4 {
   text-decoration: underline;
-    color: #a3a3a3;
+  color: #a3a3a3;
 }
 
 h5 {
   text-decoration: underline;
-    color: #b9b9b9;
+  color: #b9b9b9;
 }
 
 h6 {
   text-decoration: underline;
-    color: #d4d4d4;
+  color: #d4d4d4;
 }
 p {
   color: #ffffff;
@@ -80,15 +76,15 @@ p {
 }
 a:link,
 a:visited {
-    color: #535353;
+  color: #535353;
 }
 
 a:hover {
-    color: #ffdada;
+  color: #ffdada;
 }
 
 a:active {
-    color: #ffffff;
+  color: #ffffff;
 }
 .Ducks {
   box-sizing: content-box;
@@ -139,6 +135,7 @@ a:active {
 }
 
 .home-main {
+  container-type: inline-size;
   height: auto !important;
   min-height: 0;
   padding: 36px 20px 52px;
@@ -314,8 +311,16 @@ footer nav {
   background-color: rgb(203, 0, 0);
   line-height: 1.2;
 }
+
+footer nav a:link,
+footer nav a:visited {
+  color: #b0b0b0;
+}
+
 hr {
-  background-color: #ffffff;height: 5px; width: 100%;
+  background-color: #ffffff;
+  height: 5px;
+  width: 100%;
 }
 .Bees ol,
 .Bees ul {
@@ -529,5 +534,58 @@ hr {
 
   .home-footer {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  .Bees {
+    font-size: 28px;
+    line-height: 1.8;
+  }
+
+  .Bees:not(.home-main) {
+    padding-right: 21.6px;
+    padding-left: 21.6px;
+    font-size: 16px;
+  }
+
+  .Bees:not(.home-main) h2 {
+    font-size: 25.6px;
+  }
+
+  .Bees .home-content ul {
+    gap: 20px;
+  }
+
+  .home-main {
+    font-size: 20px;
+  }
+
+  .home-links {
+    font-size: 20px;
+  }
+
+  .home-content li,
+  .home-content li a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .home-links,
+  .home-links i {
+    font-size: 14px;
+  }
+
+  .home-content li,
+  .home-content li a {
+    font-size: 14px !important;
+  }
+}
+
+@container (max-width: 378px) {
+  .home-content li,
+  .home-content li a {
+    font-size: 14px !important;
   }
 }

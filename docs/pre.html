@@ -1,37 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Preformatted Text</title>
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2d3f1feef9.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2d3f1feef9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-
+  <body>
     <header>
-    <div class="Ducks">
+      <div class="Ducks">
         <h1>The &lt;pre&gt; Tag</h1>
-<hr>
-                <p>
-                    Normally, HTML ignores extra spaces and line breaks.
-                    The <code>&lt;pre&gt;</code> tag tells the browser to display
-                    text exactly as it appears in the HTML file.
-                </p>
-    </div>
-</header>
+        <hr />
+        <p>
+          Normally, HTML ignores extra spaces and line breaks. The
+          <code>&lt;pre&gt;</code> tag tells the browser to display text exactly
+          as it appears in the HTML file.
+        </p>
+      </div>
+    </header>
 
-    <hr>
+    <hr />
 
     <main>
-    <div class="Bees">
+      <div class="Bees">
         <h2>Example</h2>
 
-                <pre style="color: rgb(255, 255, 255);">
+        <pre style="color: rgb(255, 255, 255)">
         This line starts here.
             This one is indented.
                 This one is indented even more.
@@ -39,27 +44,27 @@
         Spaces and line breaks are preserved.
                 </pre>
 
-                <hr>
+        <hr />
 
-                <h2>Another Example</h2>
+        <h2>Another Example</h2>
 
-                <pre style="color: rgb(255, 255, 255);">
+        <pre style="color: rgb(255, 255, 255)">
         Roses are red,
             Violets are blue,
         HTML is fun,
             And coding is too.
                 </pre>
 
-                <hr>
+        <hr />
 
-                <h2>ASCII Art</h2>
+        <h2>ASCII Art</h2>
 
-                <p>
-                    The <code>&lt;pre&gt;</code> tag is also commonly used for
-                    ASCII art because it preserves every space.
-                </p>
-              <div style="text-align: center; line-height: 1.5; font-size: 10px;">
-                <pre style="color: rgb(255, 255, 255);">
+        <p>
+          The <code>&lt;pre&gt;</code> tag is also commonly used for ASCII art
+          because it preserves every space.
+        </p>
+        <div style="text-align: center; line-height: 1.5; font-size: 10px">
+          <pre style="color: rgb(255, 255, 255)">
                     ⠀⣰⠐⢲⠉⠉⢻⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                     ⡟⠙⡄⠀⡇⠀⢸⡀⠘⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                     ⢱⠀⢳⡀⠹⡆⠈⢧⠀⠸⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -113,36 +118,32 @@
                     ░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░█
                     ░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░█
                 </pre>
-                </div>
-            <hr>
+        </div>
+        <hr />
 
-            <section>
+        <section>
+          <h2>Explanation</h2>
 
-                <h2>Explanation</h2>
+          <p>
+            Without the <code>&lt;pre&gt;</code> tag, the browser removes extra
+            spaces and combines multiple blank lines into one. The
+            <code>&lt;pre&gt;</code> tag prevents that, displaying the text
+            exactly as written.
+          </p>
+        </section>
+      </div>
+    </main>
 
-                <p>
-                    Without the <code>&lt;pre&gt;</code> tag, the browser removes
-                    extra spaces and combines multiple blank lines into one.
-                    The <code>&lt;pre&gt;</code> tag prevents that, displaying
-                    the text exactly as written.
-                </p>
-
-            </section>
-                
-    </div>
-</main>
-
-    <hr>
+    <hr />
 
     <footer>
-    <div class="Foxes">
+      <div class="Foxes">
         <nav>
-                    <a href="formating.html">⬅ Previous</a> |
-                    <a href="index.html"><i class="fa-solid fa-house"></i></a> |
-                    <a href="supersub.html">Next ➜</a>
-                </nav>
-    </div>
-</footer>
-
-</body>
+          <a href="formating.html">⬅ Previous</a> |
+          <a href="index.html"><i class="fa-solid fa-house"></i></a> |
+          <a href="supersub.html">Next ➜</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
