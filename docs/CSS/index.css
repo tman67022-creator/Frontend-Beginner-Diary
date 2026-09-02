@@ -332,6 +332,19 @@ hr {
   list-style-position: outside;
 }
 
+.Bees .home-content ul {
+  display: grid;
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0 0 0 1.4em;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  list-style-position: inside;
+  gap: clamp(20px, 3.5vw, 44px);
+}
+
 .Bees li {
   text-align: left;
 }
