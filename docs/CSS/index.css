@@ -134,6 +134,41 @@ a:active {
   line-height: 1;
 }
 
+.home-links i {
+  color: #ffffff !important;
+}
+
+.home-links i::before {
+  color: #ffffff !important;
+}
+
+.home-links a:link,
+.home-links a:visited {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  color: #ffffff !important;
+}
+
+.home-links a:hover {
+  color: #000000 !important;
+}
+
+.home-links a:hover i,
+.home-links a:hover svg {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: calc(1em + 2px);
+  height: calc(1em + 2px);
+}
+
+.home-links a:hover i,
+.home-links a:hover i::before {
+  color: #000000 !important;
+}
+
 .home-main {
   container-type: inline-size;
   height: auto !important;
@@ -164,15 +199,24 @@ a:active {
   padding-left: 1.4em;
   display: grid;
   gap: clamp(20px, 3.5vw, 44px);
+  list-style: none;
 }
 
 .home-content a:link,
 .home-content a:visited {
+  display: inline-block;
+  padding: 4px 8px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  background-color: rgba(220, 220, 220, 0.75);
   color: #000000;
+  text-decoration: none;
 }
 
 .home-content a:hover {
   color: #ffdada;
+  transform: scale(1.08);
+  transform-origin: left center;
 }
 
 .home-content a:active {
@@ -314,7 +358,19 @@ footer nav {
 
 footer nav a:link,
 footer nav a:visited {
-  color: #b0b0b0;
+  display: inline-block;
+  color: #ffffff !important;
+}
+
+footer nav a:hover {
+  color: #000000 !important;
+}
+
+footer nav a:hover,
+footer nav a:hover i,
+footer nav a:hover svg {
+  transform: scale(1.08);
+  transform-origin: center;
 }
 
 hr {
