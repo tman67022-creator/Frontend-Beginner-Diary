@@ -1,8 +1,6 @@
 * {
-  box-sizing: content-box;
   margin: 0;
   padding: 0;
-  border: solid 0px #000000;
   font-family: "Kdam Thmor Pro", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -20,11 +18,6 @@ iframe {
   max-width: 100%;
 }
 
-video,
-iframe {
-  height: auto;
-}
-
 pre {
   max-width: 100%;
   overflow-x: auto;
@@ -35,45 +28,31 @@ table {
   max-width: 100%;
   overflow-x: auto;
 }
-.kdam-thmor-pro-regular {
-  font-family: "Kdam Thmor Pro", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: underline;
 }
 
 h1 {
   font-size: 100px;
-  text-decoration: underline;
   color: #000000;
 }
-h2 {
-  text-decoration: underline;
-  color: #2e2e2e;
-}
 
-h3 {
-  text-decoration: underline;
-  color: #606060;
-}
+h2 { color: #2e2e2e; }
+h3 { color: #606060; }
+h4 { color: #a3a3a3; }
+h5 { color: #b9b9b9; }
+h6 { color: #d4d4d4; }
 
-h4 {
-  text-decoration: underline;
-  color: #a3a3a3;
-}
-
-h5 {
-  text-decoration: underline;
-  color: #b9b9b9;
-}
-
-h6 {
-  text-decoration: underline;
-  color: #d4d4d4;
-}
 p {
   color: #ffffff;
-  font-style: bold;
 }
+
 a:link,
 a:visited {
   color: #535353;
@@ -87,7 +66,6 @@ a:active {
   color: #ffffff;
 }
 .Ducks {
-  box-sizing: content-box;
   margin: 0;
   padding: 0;
   border: solid 10px #ffffff;
@@ -112,17 +90,17 @@ a:active {
   line-height: 1.5;
 }
 
-.home-title {
-  margin: 24px auto 18px;
-  font-size: clamp(2.5rem, 7vw, 6rem) !important;
-  line-height: 1.15;
-}
-
 .home-image {
   display: block;
   width: min(180px, 42vw);
   height: auto;
   margin: 0 auto 18px;
+  animation: Wheel 4s linear infinite;
+}
+
+@keyframes Wheel {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .home-links {
@@ -134,10 +112,13 @@ a:active {
   line-height: 1;
 }
 
-.home-links i {
-  color: #ffffff !important;
+.home-links a,
+.home-links i,
+.home-links i::before {
+  transition: color 0.125s ease, transform 0.125s ease;
 }
 
+.home-links i,
 .home-links i::before {
   color: #ffffff !important;
 }
@@ -151,8 +132,12 @@ a:active {
   color: #ffffff !important;
 }
 
-.home-links a:hover {
+.home-links a:hover,
+.home-links a:hover i,
+.home-links a:hover i::before,
+.home-links a:hover svg {
   color: #000000 !important;
+  transform: scale(1.08);
 }
 
 .home-links a:hover i,
@@ -164,9 +149,14 @@ a:active {
   height: calc(1em + 2px);
 }
 
-.home-links a:hover i,
-.home-links a:hover i::before {
-  color: #000000 !important;
+.home-links a:active,
+.home-links a:active i,
+.home-links a:active i::before,
+.home-links a:active svg {
+  color: #4a4a4a !important;
+  fill: #4a4a4a !important;
+  stroke: #4a4a4a !important;
+  transform: rotate(-15deg) scale(1.08);
 }
 
 .home-main {
@@ -211,6 +201,7 @@ a:active {
   background-color: rgba(220, 220, 220, 0.75);
   color: #000000;
   text-decoration: none;
+  transition: color 0.125s ease, transform 0.125s ease;
 }
 
 .home-content a:hover {
@@ -233,7 +224,6 @@ a:active {
 
 .media-asset {
   display: block;
-  width: auto;
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -253,7 +243,6 @@ a:active {
 }
 
 .Bees {
-  box-sizing: content-box;
   margin: 0;
   padding: 0;
   border: solid 10px #ffffff;
@@ -291,23 +280,11 @@ a:active {
   line-height: 1.3;
 }
 
-.Bees:not(.home-main) h3 {
-  color: #dddddd;
-}
-
-.Bees:not(.home-main) h4 {
-  color: #d0d0d0;
-}
-
-.Bees:not(.home-main) h5 {
-  color: #c3c3c3;
-}
-
-.Bees:not(.home-main) h6 {
-  color: #b6b6b6;
-}
+.Bees:not(.home-main) h3 { color: #dddddd; }
+.Bees:not(.home-main) h4 { color: #d0d0d0; }
+.Bees:not(.home-main) h5 { color: #c3c3c3; }
+.Bees:not(.home-main) h6 { color: #b6b6b6; }
 footer {
-  box-sizing: content-box;
   margin: 0;
   padding: 0;
   border: solid 10px #ffffff;
@@ -360,6 +337,7 @@ footer nav a:link,
 footer nav a:visited {
   display: inline-block;
   color: #ffffff !important;
+  transition: color 0.125s ease, transform 0.125s ease;
 }
 
 footer nav a:hover {
